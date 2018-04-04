@@ -1,0 +1,15 @@
+before_script:
+  - apt-get update -qq
+  - ruby -v
+  - which ruby
+  - gem install bundler --no-ri --no-rdoc
+  - bundle install --jobs $(nproc)  "${FLAGS[@]}"
+
+fastlane-test:
+  script:
+    - bundle exec fastlane ios test
+
+fastlane-beta:
+  script:
+    - bundle exec fastlane io beta
+
