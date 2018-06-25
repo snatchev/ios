@@ -32,7 +32,8 @@ platform :ios do
     #     fail_build: false)
     
     #trainer(output_directory: ENV["CIRCLE_TEST_REPORTS"])
-    gym(scheme: "Themoji")
+    gym(scheme: "Themoji",
+        export_options = {method: "ad-hoc"})
   end
 
   desc "Submit a new Beta Build to Apple TestFlight"
