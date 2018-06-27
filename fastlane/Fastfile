@@ -34,7 +34,7 @@ platform :ios do
     #trainer(output_directory: ENV["CIRCLE_TEST_REPORTS"])
     #gym(scheme: "Themoji", configuration: "Developer")
     full_path = File.join(ENV["FASTLANE_CI_ARTIFACTS"], "fake_binary.ipa")
-    File.write("fake_binary.ipa", "This is never an ios app")
+    File.write(full_path, "This is never an ios app")
     puts full_path
     Actions.lane_context[SharedValues::IPA_OUTPUT_PATH] = full_path
   end
