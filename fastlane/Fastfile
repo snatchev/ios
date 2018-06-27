@@ -32,7 +32,12 @@ platform :ios do
     #     fail_build: false)
     
     #trainer(output_directory: ENV["CIRCLE_TEST_REPORTS"])
-    gym(scheme: "Themoji", configuration: "Developer")
+    #gym(scheme: "Themoji", configuration: "Developer")
+    say("Hello")
+    File.write("fake_binary.ipa", "This is never an ios app")
+    full_path = File.expand_path("fake_binary.ipa")
+    puts full_path
+    Actions.lane_context[SharedValues::IPA_OUTPUT_PATH] = full_path
   end
 
   desc "Submit a new Beta Build to Apple TestFlight"
