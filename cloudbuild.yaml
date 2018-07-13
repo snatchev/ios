@@ -1,0 +1,3 @@
+steps:
+- name: 'gcr.io/fastlaneci/packer'
+  args: ['build', '-var', 'project_id=fastlaneci', packer.json]
