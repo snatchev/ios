@@ -1,4 +1,4 @@
-# ios
+# iOS
 
 To compile the project you first have to run
 
