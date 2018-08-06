@@ -5,4 +5,4 @@ steps:
 artifacts:
   objects:
     location: 'gs://firebase_build_artifacts/'
-    paths: ['Archive.tgz']
+    paths: ['/fastlane.ci/Archive.tgz']
