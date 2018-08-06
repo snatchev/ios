@@ -2,7 +2,7 @@ steps:
 - name: 'gcr.io/fastlaneci/firebasebuildstep:latest'
   args: []
   dir: '/fastlane.ci'
-  artifacts:
-    objects:
-      location: 'gs://firebase_build_artifacts/'
-      paths: ['Archive.tgz']
+artifacts:
+  objects:
+    location: 'gs://firebase_build_artifacts/'
+    paths: ['Archive.tgz']
