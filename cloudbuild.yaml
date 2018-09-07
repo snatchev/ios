@@ -5,6 +5,6 @@ steps:
 artifacts:
   objects:
     location: 'gs://firebase_build_artifacts/$BUILD_ID/'
-    paths: ['/workspace/fastlane/*']
+    paths: ['/workspace/artifacts-$BUILD_ID.tgz']
 logsBucket: firebase_build_artifacts
 
