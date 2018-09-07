@@ -5,6 +5,6 @@ steps:
 artifacts:
   objects:
     location: 'gs://firebase_build_artifacts/$BUILD_ID/'
-    paths: ['/workspace/cloudbuild.yaml']
+    paths: ['/workspace/cloudbuild.yaml', '/workspace/README.me']
 logsBucket: firebase_build_artifacts
 
