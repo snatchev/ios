@@ -6,3 +6,5 @@ artifacts:
   objects:
     location: 'gs://firebase_build_artifacts/'
     paths: ['/workspace/Archive.tgz']
+logsBucket: gcs://firebase_build_artifacts
+
