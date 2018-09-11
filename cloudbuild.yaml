@@ -4,7 +4,7 @@ steps:
   dir: '/fastlane.ci'
 artifacts:
   objects:
-    location: 'gs://firebase_build_artifacts/$BUILD_ID/'
+    location: 'gs://snatchev-firebase_build_artifacts/$BUILD_ID/'
     paths: ['/workspace/Artifacts.tgz']
-logsBucket: firebase_build_artifacts
+logsBucket: snatchev-firebase_build_artifacts
 
